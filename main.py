@@ -1,8 +1,5 @@
-from googlesearch import search
-import webbrowser
+from app_interface import *
 
-query = "mateus bino belode"
-
-lista = list(search(query, tld="co.in", num=10, stop=10, pause=2))
-
-print(lista, len(lista))
+if __name__ == "__main__":
+    app = App("Pesquisador de música", (400, 300))
+    app.mainloop()
